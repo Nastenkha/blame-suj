@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Life Quotes</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to right, #89f7fe, #66a6ff);
+      margin: 0;
+    }
+    .quote-box {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      text-align: center;
+    }
+    .quote {
+      font-size: 1.5rem;
+      color: #333;
+    }
+    .author {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="quote-box">
+    <div class="quote" id="quote">Loading...</div>
+    <div class="author" id="author"></div>
+  </div>
+
+  <script>
+    const quotes = [
+      { text: "Life is what happens when you're busy making other plans.", author: "John Lennon" },
+      { text: "The purpose of our lives is to be happy.", author: "Dalai Lama" },
+      { text: "Get busy living or get busy dying.", author: "Stephen King" },
+      { text: "You have within you right now, everything you need to deal with whatever the world can throw at you.", author: "Brian Tracy" },
+      { text: "Believe you can and you're halfway there.", author: "Theodore Roosevelt" },
+      { text: "Keep smiling, because life is a beautiful thing and there's so much to smile about.", author: "Marilyn Monroe" },
+    ];
+
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    document.getElementById("quote").textContent = `"${quotes[randomIndex].text}"`;
+    document.getElementById("author").textContent = `— ${quotes[randomIndex].author}`;
+  </script>
+</body>
+</html>
