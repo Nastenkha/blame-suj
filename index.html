@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ctrl+Suj</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to right, #89f7fe, #66a6ff);
+      margin: 0;
+    }
+    .quote-box {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      text-align: center;
+    }
+    .quote {
+      font-size: 1.5rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="quote-box">
+    <div class="quote" id="quote">Loading...</div>
+  </div>
+
+  <script>
+    const quotes = [
+      { text: "You're not special. Work harder."},
+      { text: "Use the weekend to build the life you want, instead of trying to escape the life you have." },
+      { text: "If you are going through hell, keep going. Why would you stop in hell?"},
+      { text: "Don't let anybody work harder than you do." },
+      { text: "Either you're going to make it, or you're going to make it, or you're going to make it."},
+      { text: "Don't be too sweet, or they'll eat you."},
+      { text: "If life doesn't break you today, don't worry — it will try again tomorrow."},
+      { text: "Mondays are fine. It's your life that sucks."},
+      { text: "Stop giving CPR to dead situations."},
+      { text: "Life is short. Smile while you still have teeth."},
+      { text: "You have to be odd to be number one."},
+      { text: "Whatever you do, always give 100% — unless you're donating blood."},
+      { text: "Don't be ashamed of who you are. That's your parents' job."},
+      { text: "Learn from the mistakes of people who take your advice."},
+      { text: "Don't let anyone ruin your day. It's your day — ruin it yourself."},
+      { text: "Be useless, so nobody can use you."},
+      { text: "Never give up on your dreams. Keep sleeping."},
+      { text: "Even biscuits have good days — but you don't."},
+      { text: "Follow your brain. Your heart is an idiot."},
+      { text: "If you want to make the wrong decision, ask everyone."},
+      { text: "Sometimes the grass is greener because it's fake."},
+      { text: "Smile — your enemies hate it."},
+      { text: "Do what scares you, until it doesn't."},
+      { text: "Your \"normal\" day is someone's dream, so be thankful every day."},
+      { text: "If you cannot decide, the answer is no."},
+      { text: "Don't let anyone who hasn't been in your shoes tell you how to tie your laces."},
+      { text: "Have fun — even if it's not the same kind of fun everyone else is having."},
+      { text: "Not every closed door is locked. Push."},
+      { text: "Don't settle for less than you deserve."},
+      { text: "Everything is easy when you're busy"},
+    ];
+
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    document.getElementById("quote").textContent = quotes[randomIndex].text;
+  </script>
+<!--<footer style="position: fixed; bottom: 10px; width: 100%; text-align: center; font-size: 0.9rem; color: #333;">
+  Created by <a href="https://www.instagram.com/sujitha_nk/" target="_blank" style="color: #0000EE; text-decoration: none;">@sujitha_nk</a>
+</footer>-->
+
+<footer style="position: fixed; bottom: 10px; width: 100%; text-align: center; font-size: 0.9rem; color: #333;">
+  <a href="https://www.instagram.com/sujitha_nk/" target="_blank" style="text-decoration: none; color: #000; display: inline-flex; align-items: center; gap: 8px;">
+    <img src="dp.jpg" alt="Profile picture" style="width: 24px; height: 24px; border-radius: 50%;">
+    <span>@sujitha_nk</span>
+  </a>
+</footer>
+
+
+
+
+</body>
+</html>
